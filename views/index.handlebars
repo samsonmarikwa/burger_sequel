@@ -1,0 +1,44 @@
+
+<div class = "container-fluid">
+   <header>
+      <img src="/assets/img/burger.jpg" height="150" width="200">  
+      <h1>Eat-Da-Burger</h1>
+   </header>
+   <section class="two-partials">
+      <div class="not-devoured">
+         <h3 class="col-title">Available</h3>
+         <ul>
+            {{#each burgers}}
+               {{#if devoured}}
+                  {{> burgers/burger-block devoured=false}}
+               {{/if}}
+            {{/each}}
+         </ul>
+      </div>
+
+      <div class="devoured">
+         <h3 class="col-title">Devoured</h3>
+         <ul>
+            {{#each burgers}}
+               {{#unless devoured}}
+                  {{>burgers/burger-block devoured=true}}
+               {{/unless}}
+            {{/each}}
+         </ul>
+      </div>
+   </section>
+
+   <section class="form">
+
+      <form class="create-form">
+         <div class="form-group">
+            <input type="textarea" id="burger_name" name="name">
+         </div>
+
+         <button id="submit" type="submit">Submit</button>
+      </form>
+   </section>
+   <footer>
+      <p>Enter a burger you want to eat and Click the "Submit" button</p>
+   </footer>
+</div>

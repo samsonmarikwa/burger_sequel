@@ -1,0 +1,118 @@
+body {
+    font-family: Helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+    background: #fffa94;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+h1 {
+    margin: 10px;
+    color: #ff0000;
+    font-weight: 600;
+    font-size: 30px;
+}
+
+header {
+    margin: 15px;
+}
+
+.two-partials {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+    height: 250px;
+}
+
+.not-devoured,
+.devoured {
+    float: left;
+    width: 50%;
+}
+
+.form {
+    width: 100%;
+}
+
+.burgers {
+    margin-bottom: 8px;
+}
+
+.devour-burger {
+    font-weight: 300;
+    background-color: #009999;
+    width: 80px;
+    color: #000000;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+#submit {
+    font-weight: 700;
+    background-color: #009999;
+    width: 180px;
+    color: #000000;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin-top: 10px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+#submit:hover,
+.devour-burger:hover {
+    background-color: #004d80;
+    color: white;
+}
+
+#submit:active,
+.devour-burger:active {
+    background-color: #009999;
+    box-shadow: 0 5px #666;
+    transform: translateY(10px);
+}
+
+#burger_name {
+    width: 50%;
+    height: 50px;
+    font-family: Cursive, Helvetica, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif, monospace;
+    line-height: 1.4;
+    border-radius: 5px;
+    background-color: #ffb366;
+    color: #0000ff;
+    font-size: 20px;
+    padding: 15px;
+    font-weight: 900;
+    -webkit-appearance: none;
+    box-shadow: inset 0 0 10px 0 #000000;
+    outline: none
+}
+
+.col-title {
+    background: #ff8c66;
+    margin: 10px;
+}
+
+footer {
+    margin: 10px;
+}
+
+@media screen and (max-width: 990px) {
+    .not-devoured,
+    .devoured,
+    #burger_name,
+    #submit {
+        width: 100%;
+    }
+}

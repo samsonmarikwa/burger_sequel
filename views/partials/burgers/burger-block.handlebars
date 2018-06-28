@@ -1,0 +1,8 @@
+<p class="burgers">
+   {{id}} {{burger_name}}
+   {{#unless devoured}}
+      <button class="devour-burger" data-id="{{id}}" data-devoured="{{devoured}}">
+         Devour It!
+      </button>
+   {{/unless}}
+</p>

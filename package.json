@@ -1,0 +1,30 @@
+{
+    "name": "burger",
+    "version": "1.0.0",
+    "description": "Eat-Da-Burger is a restaurant application that lets users input burgers they would like to eat and they can then devour them",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js"
+    },
+    "dependencies": {
+        "body-parser": "*",
+        "express": "*",
+        "express-handlebars": "*",
+        "mysql": "*",
+        "dotenv": "*"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/samsonmarikwa/burger.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/samsonmarikwa/burger/issues"
+    },
+    "homepage": "https://github.com/samsonmarikwa/burger#readme",
+    "devDependencies": {
+        "eslint-config-google": "^0.9.1"
+    }
+}
